@@ -7,5 +7,10 @@ public class Test {
         int[] boundedArray = DataGenerator.generateDataArray(10, 5, 15);
         System.out.print("Array im Bereich [5, 15]: ");
         DataGenerator.printArray(boundedArray);
+
+        Bubblesorter bs = new Bubblesorter();
+        int[] sorterarr = bs.sort(boundedArray);
+        DataGenerator.printArray(sorterarr);
+
     }
 }
