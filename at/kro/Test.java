@@ -12,5 +12,8 @@ public class Test {
         int[] sorterarr = bs.sort(boundedArray);
         DataGenerator.printArray(sorterarr);
 
+        SelectionSorter ss = new SelectionSorter();
+        int[] sortedArr = ss.sort(DataGenerator.generateDataArray(10, 3, 11));
+        DataGenerator.printArray(sortedArr);
     }
 }
